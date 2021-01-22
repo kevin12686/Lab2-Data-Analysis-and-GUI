@@ -9,16 +9,24 @@ Lab2 Data Analysis and GUI
 ├── figure
 │   ├── gtop2.png
 │   ├── regions.png
+│   ├── screen1.png
+│   ├── screen2.png
+│   ├── screen3.png
+│   ├── screen4.png
+│   ├── screen5.png
+│   ├── screen6.png
+│   ├── screen7.png
 │   ├── selected.png
 │   └── top10.png
-├── lab2.py
-├── population.py
-├── README.md
 ├── references
 │   ├── countries.csv
 │   ├── lab2.docx
 │   ├── population.csv
 │   └── years.csv
+├── .gitignore
+├── lab2.py
+├── population.py
+├── README.md
 └── requirements.txt
 ```
 
