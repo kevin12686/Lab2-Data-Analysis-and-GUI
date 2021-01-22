@@ -5,8 +5,9 @@ import matplotlib.pyplot as plt
 def printResult(f):
     def wrapper(*args, **kwargs):
         result = f(*args, **kwargs)
-        plt.show()
-        print(', '.join(result[1]))
+        if __name__ == '__main__':
+            plt.show()
+            print(', '.join(result[1]))
         return result
 
     return wrapper
@@ -55,6 +56,9 @@ class Population:
         topn = np.flipud(np.argsort(difference))[:n]
         return topn, difference[topn]
 
+    def get_countries(self):
+        return self.countries[:, 0]
+
     def cidx_lookup_name(self, name):
         return np.where(self.countries[:, 0] == name)[0][0]
 
@@ -90,7 +94,7 @@ class Population:
     @staticmethod
     def plot(values, labels, x_value, y_label, x_label, title):
         million_v = values / 10 ** 6
-        fig = plt.figure(figsize=(10, 7), dpi=200)
+        fig = plt.figure(figsize=(10, 7), dpi=100)
         ax = fig.add_subplot(1, 1, 1)
         for i in range(million_v.shape[0]):
             ax.plot(x_value.astype('S'), million_v[i], label=labels[i])

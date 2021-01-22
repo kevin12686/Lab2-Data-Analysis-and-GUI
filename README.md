@@ -56,3 +56,18 @@ Figure:
 ![Regions](figure/regions.png "Regions")
 ![top10](figure/top10.png "top10")
 ![growth top 2](figure/gtop2.png "growth top 2")
+
+## lab2.py
+
+Run Command
+
+```shell
+python lab2.py
+```
+
+Screenshot: 
+
+![Main Windows](figure/screen1.png "Main Windows")
+![Dialog](figure/screen4.png "Dialog")
+![Error Message](figure/screen5.png "Error Message")
+![Plot](figure/screen7.png "Plot")
