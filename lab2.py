@@ -68,6 +68,7 @@ class DialogPlotWindows(tk.Toplevel):
         try:
             super().__init__(master)
             self.title('Dialog')
+            self.grab_set()
             tk.Grid.rowconfigure(self, 0, weight=1)
             tk.Grid.columnconfigure(self, 0, weight=1)
             lb = tk.Listbox(self, font=('Calibri', 14), selectmode=tk.MULTIPLE)
